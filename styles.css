@@ -1,0 +1,54 @@
+body{
+    background-color: #7263A6;
+}
+
+.main-header, .player1-marker, .player2-marker {
+    font-family: 'Luckiest Guy', cursive;
+}
+.main-header {
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  }
+  td 
+  {
+    width: 100px;
+    height: 100px;
+  }
+  table 
+  {
+    margin: 5px auto;
+  }
+  .bordered-row {
+    border-left: 4px solid #514C73;
+    border-right: 4px solid #514C73;
+  }
+  .bordered-col {
+    border-top: 4px solid #514C73;
+    border-bottom: 4px solid #514C73;
+  }
+
+  .player1-marker {
+    color: #5A30F2;
+    font-size:70px;
+    text-shadow: -1px -1px 0 #2A1573, 1px -1px 0 #2A1573, -1px 1px 0 #2A1573, 1px 1px 0 #2A1573;
+  }
+
+ .player1Color {
+  background-color: #5A30F2;
+ }
+
+  .player2-marker {
+    color:#94F2E9;
+    font-size:70px;
+    text-shadow: -1px -1px 0 #2D4F4B, 1px -1px 0 #2D4F4B, -1px 1px 0 #2D4F4B, 1px 1px 0 #2D4F4B;
+  }
+
+  .player2Color{
+    background-color:#94F2E9;
+  }
+
+  .announcement {
+    border: 2px solid #514C73;
+    border-radius: 5pt;
+    width:30%;
+    margin:auto;
+  }

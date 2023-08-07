@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href ="styles.css">
+    </head>
+    <body>
+      <div class = "container">
+        <div class = "row">
+        <h1 class="text-center main-header mt-5 mb-3">Tic Tac Toe</h1>
+        </div>
+        <div class= "row">
+        <div id = "announcement" class="mb-5">
+        <h2 id = "announcementText" class= "text-center"></h2>
+        </div>
+      </div>
+        </div>
+
+            <table>
+                <tr>
+                  <td id="row1-cell1"><p id ="p-row1-cell1" class = "text-center"></p></td>
+                  <td id = "row1-cell2" class="bordered-row"></td>
+                  <td id = "row1-cell3">3</td>
+                </tr>
+                <tr>
+                  <td id="row2-cell1" class="bordered-col">4</td>
+                  <td id="row2-cell2" class="bordered-row bordered-col">5</td>
+                  <td id="row2-cell3" class="bordered-col">6</td>
+                </tr>
+                <tr>
+                  <td id="row3-cell1">7</td>
+                  <td id="row3-cell2"class="bordered-row">8</td>
+                  <td id="row3-cell3">9</td>
+                </tr>
+              </table>
+        </div>           
+
+        </div>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="week11.js"></script>
+    </body>
+</html>
