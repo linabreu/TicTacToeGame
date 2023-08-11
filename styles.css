@@ -6,6 +6,7 @@ body{
     font-family: 'Luckiest Guy', cursive;
 }
 .main-header {
+   font-size:5em;
     text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
   }
   td 
@@ -36,9 +37,12 @@ body{
   background-color: #5A30F2;
  }
 
-  .player2-marker {
+ .tieColor{
+  background-color: #BF7821;
+ }
+  .player2-marker{
     color:#94F2E9;
-    font-size:70px;
+    font-size: 70px;
     text-shadow: -1px -1px 0 #2D4F4B, 1px -1px 0 #2D4F4B, -1px 1px 0 #2D4F4B, 1px 1px 0 #2D4F4B;
   }
 
@@ -46,9 +50,39 @@ body{
     background-color:#94F2E9;
   }
 
-  .announcement {
+  #announcement {
     border: 2px solid #514C73;
     border-radius: 5pt;
-    width:30%;
-    margin:auto;
+  }
+
+
+  .modal-content {
+    background-color: #BF7821;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #7B4C12;
+    width: 80%;
+  }
+  
+  .close {
+    color: #7B4C12;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .reset-button {
+    background-color: #BF7821;
+    border: 2px solid #7B4C12;
+    border-radius:3pt;
+    font-weight:bold;
+    padding:8px;
+    width:100%;
   }

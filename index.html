@@ -14,32 +14,49 @@
     <body>
       <div class = "container">
         <div class = "row">
-        <h1 class="text-center main-header mt-5 mb-3">Tic Tac Toe</h1>
+          <h1 class="text-center main-header mt-5 mb-3">Tic Tac Toe</h1>
         </div>
         <div class= "row">
-        <div id = "announcement" class="mb-5">
-        <h2 id = "announcementText" class= "text-center"></h2>
-        </div>
+          <div class = "col-2"></div>
+          <div id = "announcement" class=" alert mb-5 player1Color col-8">
+          <h2 id = "announcementText" class= "text-center pt-2 pb-2">Player 1,<br> it's your turn!</h2>
+          </div>
+          <div class = "col-2"></div>
       </div>
-        </div>
+          <!-- Custom error message window -->
+          <div id="modalWindow" class="modal">
 
-            <table>
+            <div class="modal-content">
+              <span id="close" class="close">&times;</span>
+              <p id = "modal-text" class="text-center"></p>
+            </div>
+
+          </div>
+          <!--Start table content-->
+            <table id="ticTacTable">
                 <tr>
-                  <td id="row1-cell1"><p id ="p-row1-cell1" class = "text-center"></p></td>
-                  <td id = "row1-cell2" class="bordered-row"></td>
-                  <td id = "row1-cell3">3</td>
+                  <td id="row1-cell1"><p id ="p-row1-cell1" class = "text-center score-row1 score-col1"></p></td>
+                  <td id = "row1-cell2" class="bordered-row"><p id ="p-row1-cell2" class = "text-center  score-row1 score-col2"></p></td>
+                  <td id = "row1-cell3"><p id ="p-row1-cell3" class = "text-center score-row1 score-col3"></p></td>
                 </tr>
                 <tr>
-                  <td id="row2-cell1" class="bordered-col">4</td>
-                  <td id="row2-cell2" class="bordered-row bordered-col">5</td>
-                  <td id="row2-cell3" class="bordered-col">6</td>
+                  <td id="row2-cell1" class="bordered-col col1"><p id ="p-row2-cell1" class = "text-center score-row2 score-col1"></p></td>
+                  <td id="row2-cell2" class="bordered-row bordered-col"><p id ="p-row2-cell2" class = "text-center score-row2 score-col3"></p></td>
+                  <td id="row2-cell3" class="bordered-col"><p id ="p-row2-cell3" class = "text-center score-row2 score-col3"></p></td>
                 </tr>
                 <tr>
-                  <td id="row3-cell1">7</td>
-                  <td id="row3-cell2"class="bordered-row">8</td>
-                  <td id="row3-cell3">9</td>
+                  <td id="row3-cell1"><p id ="p-row3-cell1" class = "text-center score-row3 score-col1"></p></td>
+                  <td id="row3-cell2"class="bordered-row"><p id ="p-row3-cell2" class = "text-center score-row3 score-col2"></p></td>
+                  <td id="row3-cell3"><p id ="p-row3-cell3" class = "text-center score-row3 score-col3"></p></td>
                 </tr>
               </table>
+              <div class= "row">
+                <div class = "col-3"></div>
+                <div class="mb-5 mt-5 col-6">
+                  <button type="button" class="reset-button" id="reset-button">Reset Table</button>
+                </div>
+                <div class = "col-3"></div>
+            </div>
         </div>           
 
         </div>
